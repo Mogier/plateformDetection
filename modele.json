@@ -1,0 +1,52 @@
+//Modèle d'objet pour le stockage des informations
+
+{
+	"urlDomain" : "www.mydomain.com",
+	"pages" : [
+		{
+			"pageURL" : "www.mydomain.com/cart/boys/123",
+			"date" : "2014-01-24",
+			"attributes" : [
+				{
+					"name" : "class",
+					"values" : [
+						{ "label" : 4 },
+						{ "span" : 2 },
+						{ "div" : 123 }
+					]
+				},
+				{
+					"name" : "id",
+					"values" : [
+						{"price" : 2 },
+						{"otherId" : 34 }
+					]
+				}
+			],
+			"detectionChoice" : "Magento",
+			"userChoice" : "Prestashop"
+		},
+		{
+			"pageURL" : "www.mydomain.com/cart/girls/456",
+			"date" : "2014-01-30",
+			"attributes" : [
+				{
+					"name" : "class",
+					"values" : [
+						{ "label" : 14 },
+						{ "span" : 21 }
+					]
+				},
+				{
+					"name" : "id",
+					"values" : [
+						{ "price" : 22 },
+						{ "otherId" : 134 }
+					]
+				}
+			],
+			"detectionChoice" : "Drupal",
+			"userChoice" : "Wordpress"
+		}
+	]
+}
