@@ -1,29 +1,29 @@
 {
-"name" :"extension chrome",
-"version" :"1.0",
-"manifest_version" :2,
-"description" :"Le truc du tutoriel",
-"options_page":"page_options.html",
-"browser_action" :
-    {
-        "default_popup" :"popup.html",
-        "default_icon" :"icon.png"
-    },
-"content_scripts": [
-	{
-	"matches": ["http://*/*", "https://*/*"],
-	"js": ["inject.js"]
-	}
-],
-"permissions": [
-  "debugger",
-    "tabs",
-    "webNavigation",
-    "webRequest",
-    "webRequestBlocking",
-    "http://*/*",
-    "https://*/*",
-    "notifications",
-    "topSites"
-]	
+    "name" :"PlateformDetection",
+    "version" :"1.0",
+    "manifest_version" :2,
+    "description" :"Web Store plateforms detection.",
+    "options_page":"page_options.html",
+    "browser_action" :
+        {
+            "default_popup" :"popup.html",
+            "default_icon" :"icon.png"
+        },
+    "content_scripts": [
+    	{
+    	"matches": ["http://*/*", "https://*/*"],
+    	"js": ["inject.js"]
+    	}
+    ],
+    "permissions": [
+        "debugger",
+        "tabs",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*",
+        "notifications",
+        "topSites"
+    ]	
 }
