@@ -3,7 +3,8 @@
 	"pages" : [
 		{
 			"pageURL" : "www.mydomain.com/cart/boys/123",
-			"date" : "2014-01-24",
+			"userIP" : "255.255.255.255",
+			"timestamp" : 12345565465,
 			"attributes" : [
 				{
 					"name" : "class",

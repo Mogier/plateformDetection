@@ -1,8 +1,12 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.greeting == 'title')
   	sendResponse({title : window.document.title});
-  else if(request.greeting == 'classes')
+  else if(request.greeting == 'class') {
   	sendResponse({classes : getClasses()});
+  }
+  else if (request.greeting == 'domain') 
+  	sendResponse({domain : window.location.host}); 
+  
 });
 
 function getClasses() {
