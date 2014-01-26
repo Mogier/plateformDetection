@@ -11,7 +11,14 @@ function refreshAttributes(){
 }
 
 function exportToCsv() {
-	var exportJSON = localStorage.getItem("developer.mozilla.org");
+	var exportJSON = "";
+
+	for (var i = 0; i < localStorage.length; i++){
+    	// do something with localStorage.getItem(localStorage.key(i));
+    	if(localStorage.key(i)!="attributeNamesToGetValues")
+    		exportJSON+=localStorage.getItem(localStorage.key(i));
+    		exportJSON+="\r\n";
+	}
 
 	window.open('data:text/csv;charset=utf-8,' + encodeURI(exportJSON));
 }
